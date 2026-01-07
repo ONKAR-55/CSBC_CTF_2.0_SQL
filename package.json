@@ -1,0 +1,27 @@
+{
+  "name": "ctf2.0_sql",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ONKAR-55/CSBC_CTF_2.0_SQL.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/ONKAR-55/CSBC_CTF_2.0_SQL/issues"
+  },
+  "homepage": "https://github.com/ONKAR-55/CSBC_CTF_2.0_SQL#readme",
+  "dependencies": {
+    "express": "^5.2.1",
+    "express-session": "^1.18.2",
+    "sqlite3": "^5.1.7"
+  }
+}
