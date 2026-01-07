@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>SecureCorp | Login</title>
+</head>
+<body>
+    <div class="container">
+        <form action="/auth" method="POST" class="login-form">
+            <h2>Employee Sign-In</h2>
+            <div class="input-group">
+                <label>Username</label>
+                <input type="text" name="username" placeholder="Enter username" required>
+            </div>
+            <div class="input-group">
+                <label>Password</label>
+                <input type="password" name="password" placeholder="Enter password" required>
+            </div>
+            <button type="submit">Unlock Dashboard</button>
+            <p class="hint">Trouble logging in? Contact IT Department.</p>
+        </form>
+    </div>
+</body>
+</html>
