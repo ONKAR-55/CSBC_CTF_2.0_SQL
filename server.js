@@ -21,7 +21,7 @@ db.serialize(() => {
 
 // 1. Landing Page
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public/land.html'));
+    res.sendFile(path.join(__dirname, 'public/landing.html'));
 });
 
 // 2. Login Page

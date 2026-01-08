@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>SecureCorp | Welcome</title>
+</head>
+<body>
+    <nav class="nav">
+        <strong>SecureCorp</strong>
+    </nav>
+    <img src="Mission_ex_2.0.png" alt="">
+    <main class="hero">
+        <h1 id="welcome-text">Welcome to the Employee Portal</h1>
+        <p>Your gateway to internal resources and secure communication.</p>
+        <hr style="border: 1px solid #ddd; margin: 1.5rem 0;">
+        <p>Authorized personnel only. Please proceed to the login page to access the dashboard.</p>
+        <a href="/login" class="btn">Login to System</a>
+    </main>
+
+    <script>
+        const welcomeText = document.getElementById('welcome-text');
+        const text = welcomeText.innerText;
+        welcomeText.innerText = '';
+        let i = 0;
+        function typeWriter() {
+            if (i < text.length) {
+                welcomeText.innerHTML += text.charAt(i);
+                i++;
+                setTimeout(typeWriter, 50);
+            }
+        }
+        window.onload = typeWriter;
+    </script>
+</body>
+</html>
