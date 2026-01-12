@@ -56,7 +56,7 @@ app.get('/main', (req, res) => {
     // SNEAKY: The flag is NOT in the HTML body. 
     // It is sent as a custom HTTP response header.
     if (req.session.role === 'admin') {
-        res.setHeader('X-Flag-Internal', 'CSBC{SQLi_and_res_Master_2026}');
+        res.setHeader('X-Flag-Internal', 'CSBC{Responce_Headers_Are_Fun!}');
     }
 
     res.sendFile(path.join(__dirname, 'public/main.html'));
